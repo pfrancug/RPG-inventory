@@ -1,0 +1,438 @@
+body {
+	margin: 0 auto;
+	background-color: #222;
+	font-family: 'Cinzel Decorative';
+	background-image: url('http://franeq94kl.nazwa.pl/ss/congruent_outline.png');
+}
+
+.empty{
+	background:green !important;
+}
+.full{
+	background:red !important;
+}
+
+.content {
+	width: 954px;
+	height: 692px;
+	margin: 50px auto;
+	border: 1px solid #777;
+	border-radius: 5px;
+	background-color: #242424;
+	background-image: -webkit-radial-gradient(top, #817d79 0%, #141414 150%);
+	background-image: radial-gradient(top, #817d79 0%, #141414 150%);
+}
+
+.stats {
+	float: left;
+	margin: 5px;
+	width: 300px;
+	height: 674px;
+	padding: 3px;
+	border: 1px solid #777;
+	border-radius: 5px;
+	background-color: #111;
+}
+
+.stats>* {
+	color: #696969;
+	margin: 5px;
+}
+
+.set {
+	float: left;
+	margin: 5px;
+	width: 300px;
+	height: 674px;
+	padding: 3px;
+	border: 1px solid #777;
+	border-radius: 5px;
+	background-color: #111;
+	background-image: url('http://piotrfrancug.pl/projects/plugin/img/character.png');
+	background-repeat: no-repeat;
+	beckground-position: center;
+}
+
+.part {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #222;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 50px;
+	background-color: rgba(100, 100, 100, 0.9);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.pre-helmet {
+	top: 35px;
+	left: 120px;
+	background-image: url('http://piotrfrancug.pl/projects/plugin/img/pre-helmet.png');
+}
+
+.pre-armor {
+	top: 100px;
+	left: 120px;
+	background-image: url('http://piotrfrancug.pl/projects/plugin/img/pre-armor.png');
+}
+
+.pre-gloves {
+	top: 150px;
+	left: 230px;
+	background-image: url('http://piotrfrancug.pl/projects/plugin/img/pre-gloves.png');
+}
+
+.pre-shoes {
+	top: 350px;
+	left: 120px;
+	background-image: url('http://piotrfrancug.pl/projects/plugin/img/pre-shoes.png');
+}
+
+.pre-weapon {
+	top: 40px;
+	left: 20px;
+	background-image: url('http://piotrfrancug.pl/projects/plugin/img/pre-weapon.png');
+}
+
+.pre-talisman {
+	top: -175px;
+	left: 120px;
+	background-image: url('http://piotrfrancug.pl/projects/plugin/img/pre-talisman.png');
+}
+
+.inventory {
+	float: left;
+	margin: 5px;
+	width: 300px;
+	height: 674px;
+	padding: 3px;
+	border: 1px solid #777;
+	border-radius: 5px;
+	background-color: #111;
+	background-image: url('http://piotrfrancug.pl/projects/plugin/img/chest.png');
+	background-repeat: no-repeat;
+	beckground-position: center;
+}
+
+.inventory > * {
+	margin: 3px;
+	float: left;
+}
+
+.locked {
+	font-size: 24px;
+	color: #ccc;
+}
+
+.item {
+	z-index: 99;
+	width: 50px;
+	height: 50px;
+	border-radius: 4px;
+}
+
+.item > img {
+	padding: 8px;
+}
+
+.bank {
+	width: 290px;
+	height: ;
+	margin: 3px;
+	border: 2px solid #444;
+	border-radius: 5px;
+}
+
+.gold > p {
+	float: left;
+	display: inline;
+	color: #fff;
+	line-height: 50px;
+	margin: 5px;
+}
+
+.gold i {
+	color: gold;
+}
+
+.sell {
+	margin: 5px;
+	float: right;
+	font-size: 24px;
+	background: #222;
+	color: gold;
+	border-color: gold;
+}
+
+.item:hover {
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5) inset, 0 0 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.highlighted {
+	border-color: #fff;
+	box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.5) inset, 0 0 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.stat > * {
+	display: inline;
+}
+
+.inventory-space {
+	position: relative;
+	float: right;
+	top: 308px;
+	margin: 5px;
+	color: #777;
+}
+
+.inventory-space > * {
+	display: inline-block;
+}
+
+.BuyMoreSlots {
+	-webkit-animation: 4s buyMoreSlots infinite;
+	        animation: 4s buyMoreSlots infinite;
+}
+
+@-webkit-keyframes buyMoreSlots {
+	0% {
+		color: #777;
+	}
+	50% {
+		color: #fff;
+	}
+	100% {
+		color: #777;
+	}
+}
+
+@keyframes buyMoreSlots {
+	0% {
+		color: #777;
+	}
+	50% {
+		color: #fff;
+	}
+	100% {
+		color: #777;
+	}
+}
+
+@-webkit-keyframes buyMoreSlotsGreen {
+	0% {
+		color: #777;
+	}
+	50% {
+		color: green;
+	}
+	100% {
+		color: #777;
+	}
+}
+
+@keyframes buyMoreSlotsGreen {
+	0% {
+		color: #777;
+	}
+	50% {
+		color: green;
+	}
+	100% {
+		color: #777;
+	}
+}
+
+@-webkit-keyframes buyMoreSlotsYellow {
+	0% {
+		color: #777;
+	}
+	50% {
+		color: yellow;
+	}
+	100% {
+		color: #777;
+	}
+}
+
+@keyframes buyMoreSlotsYellow {
+	0% {
+		color: #777;
+	}
+	50% {
+		color: yellow;
+	}
+	100% {
+		color: #777;
+	}
+}
+
+@-webkit-keyframes buyMoreSlotsRed {
+	0% {
+		color: #777;
+	}
+	50% {
+		color: red;
+	}
+	100% {
+		color: #777;
+	}
+}
+
+@keyframes buyMoreSlotsRed {
+	0% {
+		color: #777;
+	}
+	50% {
+		color: red;
+	}
+	100% {
+		color: #777;
+	}
+}
+
+
+/* ---------- ---------- ---------- TIP ---------- -------------------- */
+
+.ui-tooltip {
+	max-width: 800px !important;
+	width: auto !important;
+	margin: -1px !important;
+	padding: 0 !important;
+}
+
+.tip,
+.tip * {
+	margin: -1px !important;
+	padding: 0 !important;
+	white-space: nowrap;
+}
+
+.TipItem {
+	color: #ddd;
+	text-align: center;
+	background: #000;
+	font-size: 15px;
+}
+
+.TipBar {
+	background: top left repeat-x;
+	position: relative;
+	background-image: url('http://franeq94kl.nazwa.pl/ss/FcL28LW.png');
+	background-blend-mode: luminosity;
+	height: 34px;
+}
+
+.TipBarL {
+	background-image: url('http://franeq94kl.nazwa.pl/ss/cq2dlsh.png');
+	background-blend-mode: luminosity;
+	height: 34px;
+	width: 29px;
+	left: 1px;
+	top: 1px;
+	position: absolute;
+}
+
+.TipBarR {
+	background-image: url('http://franeq94kl.nazwa.pl/ss/cq0flsh.png');
+	background-blend-mode: luminosity;
+	height: 34px;
+	width: 29px;
+	right: 1px;
+	top: 1px;
+	position: absolute;
+}
+
+.Rarity-white .TipBar,
+.Rarity-white .TipBarL,
+.Rarity-white .TipBarR {
+	background-color: white;
+}
+
+.Rarity-white .TipSeparator {
+	background: -webkit-linear-gradient(left, transparent 10%, white 40%, white 60%, transparent 90%);
+	background: linear-gradient(to right, transparent 10%, white 40%, white 60%, transparent 90%);
+}
+
+.Rarity-green .TipBar,
+.Rarity-green .TipBarL,
+.Rarity-green .TipBarR {
+	background-color: green;
+}
+
+.Rarity-green .TipSeparator {
+	background: -webkit-linear-gradient(left, transparent 10%, green 40%, green 60%, transparent 90%);
+	background: linear-gradient(to right, transparent 10%, green 40%, green 60%, transparent 90%);
+}
+
+.Rarity-blue .TipBar,
+.Rarity-blue .TipBarL,
+.Rarity-blue .TipBarR {
+	background-color: navy;
+}
+
+.Rarity-blue .TipSeparator {
+	background: -webkit-linear-gradient(left, transparent 10%, navy 40%, navy 60%, transparent 90%);
+	background: linear-gradient(to right, transparent 10%, navy 40%, navy 60%, transparent 90%);
+}
+
+.Rarity-yellow .TipBar,
+.Rarity-yellow .TipBarL,
+.Rarity-yellow .TipBarR {
+	background-color: gold;
+}
+
+.Rarity-yellow .TipSeparator {
+	background: -webkit-linear-gradient(left, transparent 10%, gold 40%, gold 60%, transparent 90%);
+	background: linear-gradient(to right, transparent 10%, gold 40%, gold 60%, transparent 90%);
+}
+
+.Rarity-set .TipBar,
+.Rarity-set .TipBarL,
+.Rarity-set .TipBarR {
+	background-color: violet;
+}
+
+.Rarity-set .TipSeparator {
+	background: -webkit-linear-gradient(left, transparent 10%, violet 40%, violet 60%, transparent 90%);
+	background: linear-gradient(to right, transparent 10%, violet 40%, violet 60%, transparent 90%);
+}
+
+.Rarity-legendary .TipBar,
+.Rarity-legendary .TipBarL,
+.Rarity-legendary .TipBarR {
+	background-color: salmon;
+}
+
+.Rarity-legendary .TipSeparator {
+	background: -webkit-linear-gradient(left, transparent 10%, salmon 40%, salmon 60%, transparent 90%);
+	background: linear-gradient(to right, transparent 10%, salmon 40%, salmon 60%, transparent 90%);
+}
+
+.TipTittle {
+	font-family: 'Cinzel Decorative';
+	font-size: 18px;
+	margin: 0 34px !important;
+	line-height: 34px;
+}
+
+.TipEnchant {
+	color: #1ba29b;
+	padding: 5px 15px!important;
+}
+
+.TipStats {
+	color: #8888ff;
+	padding: 5px 15px!important;
+}
+
+.TipPrice {
+	color: gold;
+	padding: 5px 15px!important;
+}
+
+.TipSeparator {
+	height: 2px;
+	margin: 1px 0px;
+}
