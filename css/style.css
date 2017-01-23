@@ -1,22 +1,23 @@
+@font-face { font-family: 'Cinzel Decorative'; src: url('../fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf'); }
+
 body {
 	margin: 0 auto;
-	background-color: #222;
-	font-family: 'Cinzel Decorative';
-	background-image: url('http://franeq94kl.nazwa.pl/ss/congruent_outline.png');
+	font-family: 'Cinzel Decorative', serif;
+	background: #222;
 }
 
 .empty{
-	background:green !important;
+	background: #008000 !important;
 }
 .full{
-	background:red !important;
+	background: #ff0000 !important;
 }
 
 .content {
 	width: 954px;
 	height: 692px;
 	margin: 50px auto;
-	border: 1px solid #777;
+	border: 1px solid #777777;
 	border-radius: 5px;
 	background-color: #242424;
 	background-image: -webkit-radial-gradient(top, #817d79 0%, #141414 150%);
@@ -29,9 +30,9 @@ body {
 	width: 300px;
 	height: 674px;
 	padding: 3px;
-	border: 1px solid #777;
+	border: 1px solid #777777;
 	border-radius: 5px;
-	background-color: #111;
+	background-color: #111111;
 }
 
 .stats>* {
@@ -45,61 +46,56 @@ body {
 	width: 300px;
 	height: 674px;
 	padding: 3px;
-	border: 1px solid #777;
+	border: 1px solid #777777;
 	border-radius: 5px;
-	background-color: #111;
-	background-image: url('http://piotrfrancug.pl/projects/plugin/img/character.png');
-	background-repeat: no-repeat;
-	beckground-position: center;
+	background: #111111 url('images/character.png') no-repeat center;
 }
 
 .part {
 	position: relative;
 	width: 50px;
 	height: 50px;
-	border: 2px solid #222;
+	border: 2px solid #222222;
 	border-radius: 4px;
 	text-align: center;
 	line-height: 50px;
-	background-color: rgba(100, 100, 100, 0.9);
-	background-repeat: no-repeat;
-	background-position: center;
+	background: rgba(100, 100, 100, 0.9) no-repeat center;
 }
 
 .pre-helmet {
-	top: 35px;
+	top: 65px;
 	left: 120px;
-	background-image: url('http://piotrfrancug.pl/projects/plugin/img/pre-helmet.png');
+	background-image: url('images/pre-helmet.png');
 }
 
 .pre-armor {
-	top: 100px;
+	top: 130px;
 	left: 120px;
-	background-image: url('http://piotrfrancug.pl/projects/plugin/img/pre-armor.png');
+	background-image: url('images/pre-armor.png');
 }
 
 .pre-gloves {
-	top: 150px;
+	top: 180px;
 	left: 230px;
-	background-image: url('http://piotrfrancug.pl/projects/plugin/img/pre-gloves.png');
+	background-image: url('images/pre-gloves.png');
 }
 
 .pre-shoes {
-	top: 350px;
+	top: 390px;
 	left: 120px;
-	background-image: url('http://piotrfrancug.pl/projects/plugin/img/pre-shoes.png');
+	background-image: url('images/pre-shoes.png');
 }
 
 .pre-weapon {
-	top: 40px;
+	top: 80px;
 	left: 20px;
-	background-image: url('http://piotrfrancug.pl/projects/plugin/img/pre-weapon.png');
+	background-image: url('images/pre-weapon.png');
 }
 
 .pre-talisman {
-	top: -175px;
+	top: -145px;
 	left: 120px;
-	background-image: url('http://piotrfrancug.pl/projects/plugin/img/pre-talisman.png');
+	background-image: url('images/pre-talisman.png');
 }
 
 .inventory {
@@ -108,12 +104,9 @@ body {
 	width: 300px;
 	height: 674px;
 	padding: 3px;
-	border: 1px solid #777;
+	border: 1px solid #777777;
 	border-radius: 5px;
-	background-color: #111;
-	background-image: url('http://piotrfrancug.pl/projects/plugin/img/chest.png');
-	background-repeat: no-repeat;
-	beckground-position: center;
+	background: #111111 url('images/chest.png') no-repeat center;
 }
 
 .inventory > * {
@@ -123,7 +116,7 @@ body {
 
 .locked {
 	font-size: 24px;
-	color: #ccc;
+	color: #cccccc;
 }
 
 .item {
@@ -139,31 +132,30 @@ body {
 
 .bank {
 	width: 290px;
-	height: ;
 	margin: 3px;
-	border: 2px solid #444;
+	border: 2px solid #444444;
 	border-radius: 5px;
 }
 
 .gold > p {
 	float: left;
 	display: inline;
-	color: #fff;
+	color: #ffffff;
 	line-height: 50px;
 	margin: 5px;
 }
 
 .gold i {
-	color: gold;
+	color: #ffd700;
 }
 
 .sell {
 	margin: 5px;
 	float: right;
 	font-size: 24px;
-	background: #222;
-	color: gold;
-	border-color: gold;
+	background: #222222;
+	color: #ffd700;
+	border-color: #ffd700;
 }
 
 .item:hover {
@@ -171,7 +163,7 @@ body {
 }
 
 .highlighted {
-	border-color: #fff;
+	border-color: #ffffff;
 	box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.5) inset, 0 0 2px 2px rgba(255, 255, 255, 0.5);
 }
 
@@ -184,7 +176,7 @@ body {
 	float: right;
 	top: 308px;
 	margin: 5px;
-	color: #777;
+	color: #777777;
 }
 
 .inventory-space > * {
@@ -198,70 +190,70 @@ body {
 
 @-webkit-keyframes buyMoreSlots {
 	0% {
-		color: #777;
+		color: #777777;
 	}
 	50% {
-		color: #fff;
+		color: #ffffff;
 	}
 	100% {
-		color: #777;
+		color: #777777;
 	}
 }
 
 @keyframes buyMoreSlots {
 	0% {
-		color: #777;
+		color: #777777;
 	}
 	50% {
-		color: #fff;
+		color: #ffffff;
 	}
 	100% {
-		color: #777;
+		color: #777777;
 	}
 }
 
 @-webkit-keyframes buyMoreSlotsGreen {
 	0% {
-		color: #777;
+		color: #777777;
 	}
 	50% {
-		color: green;
+		color: #008000;
 	}
 	100% {
-		color: #777;
+		color: #777777;
 	}
 }
 
 @keyframes buyMoreSlotsGreen {
 	0% {
-		color: #777;
+		color: #777777;
 	}
 	50% {
-		color: green;
+		color: #008000;
 	}
 	100% {
-		color: #777;
+		color: #777777;
 	}
 }
 
 @-webkit-keyframes buyMoreSlotsYellow {
 	0% {
-		color: #777;
+		color: #777777;
 	}
 	50% {
-		color: yellow;
+		color: #ffff00;
 	}
 	100% {
-		color: #777;
+		color: #777777;
 	}
 }
 
 @keyframes buyMoreSlotsYellow {
 	0% {
-		color: #777;
+		color: #777777;
 	}
 	50% {
-		color: yellow;
+		color: #ffff00;
 	}
 	100% {
 		color: #777;
@@ -270,28 +262,27 @@ body {
 
 @-webkit-keyframes buyMoreSlotsRed {
 	0% {
-		color: #777;
+		color: #777777;
 	}
 	50% {
-		color: red;
+		color: #ff0000;
 	}
 	100% {
-		color: #777;
+		color: #777777;
 	}
 }
 
 @keyframes buyMoreSlotsRed {
 	0% {
-		color: #777;
+		color: #777777;
 	}
 	50% {
-		color: red;
+		color: #ff0000;
 	}
 	100% {
-		color: #777;
+		color: #777777;
 	}
 }
-
 
 /* ---------- ---------- ---------- TIP ---------- -------------------- */
 
@@ -310,22 +301,21 @@ body {
 }
 
 .TipItem {
-	color: #ddd;
+	color: #dddddd;
 	text-align: center;
-	background: #000;
+	background: #000000;
 	font-size: 15px;
 }
 
 .TipBar {
-	background: top left repeat-x;
 	position: relative;
-	background-image: url('http://franeq94kl.nazwa.pl/ss/FcL28LW.png');
+	background: url('images/tip-center.png') repeat-x top left;
 	background-blend-mode: luminosity;
 	height: 34px;
 }
 
 .TipBarL {
-	background-image: url('http://franeq94kl.nazwa.pl/ss/cq2dlsh.png');
+	background-image: url('images/tip-left .png');
 	background-blend-mode: luminosity;
 	height: 34px;
 	width: 29px;
@@ -335,7 +325,7 @@ body {
 }
 
 .TipBarR {
-	background-image: url('http://franeq94kl.nazwa.pl/ss/cq0flsh.png');
+	background-image: url('imagess/tip-right.png');
 	background-blend-mode: luminosity;
 	height: 34px;
 	width: 29px;
@@ -347,12 +337,12 @@ body {
 .Rarity-white .TipBar,
 .Rarity-white .TipBarL,
 .Rarity-white .TipBarR {
-	background-color: white;
+	background-color: #ffffff;
 }
 
 .Rarity-white .TipSeparator {
-	background: -webkit-linear-gradient(left, transparent 10%, white 40%, white 60%, transparent 90%);
-	background: linear-gradient(to right, transparent 10%, white 40%, white 60%, transparent 90%);
+	background: -webkit-linear-gradient(left, transparent 10%, #ffffff 40%, #ffffff 60%, transparent 90%);
+	background: linear-gradient(to right, transparent 10%, #ffffff 40%, #ffffff 60%, transparent 90%);
 }
 
 .Rarity-green .TipBar,
@@ -362,56 +352,56 @@ body {
 }
 
 .Rarity-green .TipSeparator {
-	background: -webkit-linear-gradient(left, transparent 10%, green 40%, green 60%, transparent 90%);
-	background: linear-gradient(to right, transparent 10%, green 40%, green 60%, transparent 90%);
+	background: -webkit-linear-gradient(left, transparent 10%, #008000 40%, #008000 60%, transparent 90%);
+	background: linear-gradient(to right, transparent 10%, #008000 40%, #008000 60%, transparent 90%);
 }
 
 .Rarity-blue .TipBar,
 .Rarity-blue .TipBarL,
 .Rarity-blue .TipBarR {
-	background-color: navy;
+	background-color: #000080;
 }
 
 .Rarity-blue .TipSeparator {
-	background: -webkit-linear-gradient(left, transparent 10%, navy 40%, navy 60%, transparent 90%);
-	background: linear-gradient(to right, transparent 10%, navy 40%, navy 60%, transparent 90%);
+	background: -webkit-linear-gradient(left, transparent 10%, #000080 40%, #000080 60%, transparent 90%);
+	background: linear-gradient(to right, transparent 10%, #000080 40%, #000080 60%, transparent 90%);
 }
 
 .Rarity-yellow .TipBar,
 .Rarity-yellow .TipBarL,
 .Rarity-yellow .TipBarR {
-	background-color: gold;
+	background-color: #ffd700;
 }
 
 .Rarity-yellow .TipSeparator {
-	background: -webkit-linear-gradient(left, transparent 10%, gold 40%, gold 60%, transparent 90%);
-	background: linear-gradient(to right, transparent 10%, gold 40%, gold 60%, transparent 90%);
+	background: -webkit-linear-gradient(left, transparent 10%, #ffd700 40%, #ffd700 60%, transparent 90%);
+	background: linear-gradient(to right, transparent 10%, #ffd700 40%, #ffd700 60%, transparent 90%);
 }
 
 .Rarity-set .TipBar,
 .Rarity-set .TipBarL,
 .Rarity-set .TipBarR {
-	background-color: violet;
+	background-color: #ee82ee;
 }
 
 .Rarity-set .TipSeparator {
-	background: -webkit-linear-gradient(left, transparent 10%, violet 40%, violet 60%, transparent 90%);
-	background: linear-gradient(to right, transparent 10%, violet 40%, violet 60%, transparent 90%);
+	background: -webkit-linear-gradient(left, transparent 10%, #ee82ee 40%, #ee82ee 60%, transparent 90%);
+	background: linear-gradient(to right, transparent 10%, #ee82ee 40%, #ee82ee 60%, transparent 90%);
 }
 
 .Rarity-legendary .TipBar,
 .Rarity-legendary .TipBarL,
 .Rarity-legendary .TipBarR {
-	background-color: salmon;
+	background-color: #fa8072;
 }
 
 .Rarity-legendary .TipSeparator {
-	background: -webkit-linear-gradient(left, transparent 10%, salmon 40%, salmon 60%, transparent 90%);
-	background: linear-gradient(to right, transparent 10%, salmon 40%, salmon 60%, transparent 90%);
+	background: -webkit-linear-gradient(left, transparent 10%, #fa8072 40%, #fa8072 60%, transparent 90%);
+	background: linear-gradient(to right, transparent 10%, #fa8072 40%, #fa8072 60%, transparent 90%);
 }
 
 .TipTittle {
-	font-family: 'Cinzel Decorative';
+	font-family: 'Cinzel Decorative', serif;
 	font-size: 18px;
 	margin: 0 34px !important;
 	line-height: 34px;
@@ -428,11 +418,11 @@ body {
 }
 
 .TipPrice {
-	color: gold;
+	color: #ffd700;
 	padding: 5px 15px!important;
 }
 
 .TipSeparator {
 	height: 2px;
-	margin: 1px 0px;
+	margin: 1px 0;
 }

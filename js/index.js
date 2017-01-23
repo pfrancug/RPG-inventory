@@ -56,19 +56,19 @@ function getID() {
 		set[value] = $('.pre-' + value).children('.item').attr('id');
 	});
 	console.log("Set contains of: " + JSON.stringify(set));
-};
+}
 
 /* ---------- ---------- slots ---------- ---------- */
 
 function countSpace() {
-	partnum = 0
+	partnum = 0;
 	$(".part").each(function(index) {
 		if (($(this).find("*").length == 0) && !$(this).hasClass('locked') && !$(this).hasClass('sell') && !$(this).hasClass('pre')) {
 			partnum += 1
 		}
 	});
-	var Space = $('.part').length - $('.locked').length - $('.sell').length - $('.pre').length
-	var takenSpace = Space - partnum
+	var Space = $('.part').length - $('.locked').length - $('.sell').length - $('.pre').length;
+	var takenSpace = Space - partnum;
 	$('.inventory-space').children('.space-value').text(takenSpace + '/' + Space);
 	if (takenSpace / Space <= 0.5) {
 		$('.BuyMoreSlots').css('animation', '4s buyMoreSlotsGreen infinite');
@@ -79,7 +79,7 @@ function countSpace() {
 	if (takenSpace / Space >= 0 && takenSpace / Space >= 0.75) {
 		$('.BuyMoreSlots').css('animation', '4s buyMoreSlotsRed infinite');
 	}
-};
+}
 
 /* ---------- ---------- locked slots ---------- ---------- */
 
@@ -98,12 +98,12 @@ $('.item').tooltip({
 	content: function() {
 		return $(this).children('.tip').html();
 	},
-	tooltipClass: 'tip',
+	tooltipClass: 'tip'
 });
 $('.BuyMoreSlots').tooltip({
 	track: true,
 	content: 'Buy More Slots',
-	tooltipClass: 'tip',
+	tooltipClass: 'tip'
 });
 
 /* ---------- ---------- pre-item img ---------- ---------- */
@@ -147,7 +147,7 @@ $('.item').draggable({
 	},
 	revert: 'invalid',
 	opacity: 0.9,
-	cursor: 'move',
+	cursor: 'move'
 });
 
 /* ---------- ---------- drop function ---------- ---------- */
@@ -183,7 +183,7 @@ $('.inv').droppable({
 	accept: function(element) {
 		return ($(this).find("*").length == 0)
 	},
-	drop: drop,
+	drop: drop
 });
 
 /* ---------- ---------- droppable set ---------- ---------- */
@@ -193,7 +193,7 @@ $.each(['armor', 'helmet', 'talisman', 'weapon', 'gloves', 'shoes'], function(in
 		accept: function(element) {
 			return ($(this).find("*").length == 0 && (element.hasClass(value)));
 		},
-		drop: drop,
+		drop: drop
 	});
 });
 
@@ -201,5 +201,5 @@ $.each(['armor', 'helmet', 'talisman', 'weapon', 'gloves', 'shoes'], function(in
 
 $('.part.sell').droppable({
 	accept: '.item',
-	drop: drop,
+	drop: drop
 });
