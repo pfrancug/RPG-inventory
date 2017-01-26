@@ -315,7 +315,7 @@ body {
 }
 
 .TipBarL {
-	background-image: url('../images/tip-left .png');
+	background-image: url('../images/tip-left.png');
 	background-blend-mode: luminosity;
 	height: 34px;
 	width: 29px;
@@ -325,7 +325,7 @@ body {
 }
 
 .TipBarR {
-	background-image: url('../imagess/tip-right.png');
+	background-image: url('../images/tip-right.png');
 	background-blend-mode: luminosity;
 	height: 34px;
 	width: 29px;
