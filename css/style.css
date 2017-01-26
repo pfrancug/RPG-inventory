@@ -48,7 +48,7 @@ body {
 	padding: 3px;
 	border: 1px solid #777777;
 	border-radius: 5px;
-	background: #111111 url('images/character.png') no-repeat center;
+	background: #111111 url('../images/character.png') no-repeat center;
 }
 
 .part {
@@ -65,37 +65,37 @@ body {
 .pre-helmet {
 	top: 65px;
 	left: 120px;
-	background-image: url('images/pre-helmet.png');
+	background-image: url('../images/pre-helmet.png');
 }
 
 .pre-armor {
 	top: 130px;
 	left: 120px;
-	background-image: url('images/pre-armor.png');
+	background-image: url('../images/pre-armor.png');
 }
 
 .pre-gloves {
 	top: 180px;
 	left: 230px;
-	background-image: url('images/pre-gloves.png');
+	background-image: url('../images/pre-gloves.png');
 }
 
 .pre-shoes {
 	top: 390px;
 	left: 120px;
-	background-image: url('images/pre-shoes.png');
+	background-image: url('../images/pre-shoes.png');
 }
 
 .pre-weapon {
 	top: 80px;
 	left: 20px;
-	background-image: url('images/pre-weapon.png');
+	background-image: url('../images/pre-weapon.png');
 }
 
 .pre-talisman {
 	top: -145px;
 	left: 120px;
-	background-image: url('images/pre-talisman.png');
+	background-image: url('../images/pre-talisman.png');
 }
 
 .inventory {
@@ -106,7 +106,7 @@ body {
 	padding: 3px;
 	border: 1px solid #777777;
 	border-radius: 5px;
-	background: #111111 url('images/chest.png') no-repeat center;
+	background: #111111 url('../images/chest.png') no-repeat center;
 }
 
 .inventory > * {
@@ -309,13 +309,13 @@ body {
 
 .TipBar {
 	position: relative;
-	background: url('images/tip-center.png') repeat-x top left;
+	background: url('../images/tip-center.png') repeat-x top left;
 	background-blend-mode: luminosity;
 	height: 34px;
 }
 
 .TipBarL {
-	background-image: url('images/tip-left .png');
+	background-image: url('../images/tip-left .png');
 	background-blend-mode: luminosity;
 	height: 34px;
 	width: 29px;
@@ -325,7 +325,7 @@ body {
 }
 
 .TipBarR {
-	background-image: url('imagess/tip-right.png');
+	background-image: url('../imagess/tip-right.png');
 	background-blend-mode: luminosity;
 	height: 34px;
 	width: 29px;
