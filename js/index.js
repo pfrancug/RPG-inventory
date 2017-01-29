@@ -107,17 +107,6 @@ $('.BuyMoreSlots').tooltip({
 });
 
 /* ---------- ---------- pre-item img ---------- ---------- */
-/*
-function bgImg(tentutaj, item) {
-	if ($(tentutaj).hasClass(item)) {
-		$('.pre-' + item).addClass('highlighted');
-	};
-	if ($(tentutaj).parent().hasClass("pre-" + item)) {
-		$(tentutaj).parent().css("background-image", "url(http://piotrfrancug.pl/projects/plugin/img/pre-" + item + ".png)");
-	};
-};
-	//		bgImg(this, $(this).attr('class').split(" ")[1]);
-*/
 
 function preImage() {
 	$.each(['armor', 'helmet', 'talisman', 'weapon', 'gloves', 'shoes'], function(index, value) {
@@ -139,7 +128,6 @@ $('.item').draggable({
 		$('.pre-' + $(this).attr('class').split(" ")[1]).addClass('highlighted');
 		$(this).parent('.inv').removeClass('full').addClass('empty');
 		$(this).css('z-index','100');
-
 	},
 	stop: function() {
 		$('.part').removeClass('highlighted');
