@@ -138,12 +138,13 @@ $('.item').draggable({
 		$('.tip').hide();
 		$('.pre-' + $(this).attr('class').split(" ")[1]).addClass('highlighted');
 		$(this).parent('.inv').removeClass('full').addClass('empty');
+		$(this).css('z-index','100');
 
 	},
 	stop: function() {
 		$('.part').removeClass('highlighted');
 		$(this).parent('.inv').removeClass('empty').addClass('full');
-
+        $(this).css('z-index','99');
 	},
 	revert: 'invalid',
 	opacity: 0.9,
